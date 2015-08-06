@@ -1,0 +1,939 @@
+/*
+WOO CUSTOM STYLESHEET
+---------------------
+
+Instructions:
+
+Add your custom styles in this file instead of style.css so it
+is easier to update the theme. Simply copy an existing style
+from style.css to this file, and modify it to your liking. */
+
+
+/* GLOBAL STYLES
+----------------
+Add styles beneath this line that you want to be applied across your entire site */
+
+/* Main */
+
+body {
+	font-family: 'Conv_Gotham-Book', sans-serif;
+}
+
+.entry img,
+img.thumbnail,
+#portfolio .group.portfolio-img img {
+	background: none; 
+	border: none; 
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Conv_Gotham-Book', sans-serif;
+}
+
+ol, ul {
+	list-style: disc;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+}
+	a:hover { text-decoration: none;}
+
+/* Wrapper Content */
+
+#wrapper {
+	background: url('images/texture-paper.png') repeat scroll center 0 transparent;
+	padding: 0;
+}
+
+.col-full, #wrapper {
+	margin: 0 auto !important;
+	max-width: 100% !important;
+	width: auto;
+}
+
+#inner-wrapper {
+	padding: 0;
+}
+
+#content {
+	padding: 0;
+}
+
+/* Header */
+
+#logo {  
+	float: none;
+	text-align: center;
+}
+
+/* Parallax */
+
+.parallax {
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	background-position: center center;
+	background-size: 120%;
+	background-size: cover!important;
+	-webkit-background-size: cover!important;
+}
+
+/* Anchor Routes */
+
+.i_want_select {
+	position: relative;
+}
+
+.bizz_content {
+	padding-top: 157px;
+	text-align: center;
+	width: 100%;
+}
+
+#attend_btn_div span,
+#host_btn_div span {
+	background-color: rgba(0, 0, 0, 0);
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 1px solid #BCBEC0;
+	border-radius: 2px 2px 2px 2px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	height: 28px;
+	padding: 16px 25px;
+	text-indent: -9999px;
+	width: 508px;
+}
+
+#attend_btn_div span:hover,
+#host_btn_div span:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 1px solid #BCBEC0;
+}
+
+#attend_btn_div span {
+	background-image: url("images/text-iwanttoattend.png");
+}
+
+#host_btn_div span {
+	background-image: url('images/text-iwanttohost.png');
+}
+
+.or {
+	height: auto;
+	margin: 20px 0;
+}
+
+/* Navigation */
+
+.main_nav_container {
+	height: 58px;
+}
+
+.to_dinner span.text {
+	color: #A09475;
+	display: inline-block;
+	font: 30px/1 bebas-neue;
+	letter-spacing: 4px;
+	margin: 0 17px 0 20px;
+}
+
+.to_dinner {
+	line-height: 1;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.to_dinner .sides {
+	background: url("images/horizontal-line-sharp.png") repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 12px;
+	margin-bottom: 3px;
+	width: 65px;
+}
+
+#navbar {
+	margin-top: 9px;
+}
+
+.menu_nav { 
+	display: block; 
+}
+
+.menu_nav ul {
+	font-family: bebas, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 12px 0;
+	text-align: center;
+	width: 100% !important;
+	z-index: 3;
+}
+
+.menu_nav li {
+	border-right: 2px solid #A09B8D;
+	display: inline-block;
+	list-style-type: none;
+}
+
+.menu_nav li a {
+	color: #A09B8D;
+	display: inline-block;
+	font-family: bebas, sans-serif;
+	font-size: 12px;
+	letter-spacing: 2px;
+	line-height: 18px;
+	padding: 0 15px;
+	text-decoration: none;
+}
+	.menu_nav li a:hover { color: #222222;}
+
+.menu_nav .menu_last {
+	border-right: none;
+}
+
+/* Navigation Sticky */
+
+#nav.is-sticky {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+#nav.is-sticky li {
+	border-color: #BBBEBF;
+}
+
+#nav.is-sticky a {
+	color: #BBBEBF;
+}
+	#nav.is-sticky a:hover { color: #FFFFFF;}
+
+/* Mobile Navigation */
+
+.nav-toggle:before {
+	display: none;
+	padding: 0px;
+}
+
+.nav-toggle {
+	display: none;
+	font-size: 0px;
+}
+
+/* Form - Main */
+
+#host_tag .parallax,
+#about_us .parallax { /* Bubble hint showing above the image FIX */
+	position: relative;
+	z-index: 2;
+}
+
+.form-container {
+	margin: 25px auto -25px;
+	max-width: 533px;
+}
+
+.tag_line_form {
+	color: #221F1F;
+	font: 800 20px/1 'open sans',sans-serif;
+	text-align: center;
+}
+
+#attend_header_block,
+#host_header_block {
+	margin: 0 0 20px;
+	padding-top: 50px;
+}
+
+#attend_title h1,
+#host_title h1 {
+	background-repeat: no-repeat;
+	display: block;
+	margin: 30px auto;
+	text-align: center;
+	text-indent: -9999px;
+}
+
+#attend_title h1 {
+	background-image: url('images/text-iwanttoattend-form.png');
+	height: 28px;
+	width: 508px;
+}
+
+#host_title h1 {
+	background-image: url('images/text-iwanttohost-form.png');
+	height: 29px;
+	width: 440px;
+}
+
+#attend_header_block .sides,
+#host_header_block .sides {
+	background: url("images/horizontal-line-smooth.png") repeat scroll 0 0 transparent;
+	display: block;
+	margin: 0 auto;
+	height: 12px;
+	width: 533px;
+}
+
+/* About Us */
+
+.about_icon {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.about_icon .sides {
+	background: url("images/horizontal-line-sharp.png") repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 12px;
+	margin-bottom: 3px;
+	width: 209px;
+}
+
+.about_text h2 {
+	font: 800 20px 'open sans',sans-serif;
+	margin: 40px 0 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.about_text div {
+	margin: 0 auto;
+	width: 555px;
+}
+
+.about_text div p {
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+#about_us .train {
+	background: url("images/dinnerties-train.png") no-repeat scroll -551px 0 transparent;
+	height: 43px;
+	margin: 100px 0;
+}
+
+/* FaQs */
+
+.faq_icon {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.faq_icon .sides {
+	background: url("images/horizontal-line-sharp.png") repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 12px;
+	margin-bottom: 3px;
+	width: 209px;
+}
+
+.faq_text h2 {
+	font: 800 20px 'open sans',sans-serif;
+	margin: 40px 0 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#faqs .train {
+	background: url("images/dinnerties-train.png") no-repeat scroll center 0 transparent;
+	height: 43px;
+	margin: 100px 0;
+}
+
+ul.nav1 {
+	list-style: none outside none;
+	margin: 0 auto;
+	padding: 0;
+	width: 555px;
+}
+
+.nav1 li {
+	background: url("images/icon-li-red.png") no-repeat scroll 0 3px transparent;
+	margin-bottom: 25px;
+	padding: 0 0 0 15px;
+}
+
+.nav1 li div {
+	color: #231F20;
+	font: 800 15px/1 'open sans',sans-serif;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.nav1 p {
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+/* Contact */
+
+.contact_icon {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.contact_icon .sides {
+	background: url("images/horizontal-line-sharp.png") repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 12px;
+	margin-bottom: 3px;
+	width: 209px;
+}
+
+.contact_text h2 {
+	font: 800 20px 'open sans',sans-serif;
+	margin: 40px auto 20px;
+	text-transform: uppercase;
+	width: 550px;
+}
+
+.contact_social .mail_block p {
+	margin-top: 5px;
+}
+
+#contact .train {
+	background: url("images/dinnerties-train-right.png") no-repeat scroll 0 right transparent;
+	height: 43px;
+	margin: 100px 0;
+}
+
+.see_you {
+	text-align: center;
+}
+
+.see_you .sides {
+	background: url("images/horizontal-line-sharp.png") repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 12px;
+	margin-bottom: 5px;
+	width: 209px;
+}
+
+.see_you p {
+	color: #B8AC8C;
+	display: inline;
+	font: 34px/1 bebas-neue,sans-serif;
+	letter-spacing: 4px;
+	margin: 0 10px 0 14px;
+}
+
+.contact_social {
+	margin: 0 auto;
+	width: 550px;
+}
+
+.contact_social .mail_block {
+	margin-bottom: 20px;
+}
+
+.contact_social a {
+	color: #A09B8D;
+}
+	.contact_social a:hover { color: #222222;}
+
+.contact_social h2 {
+	font: 800 15px/1 'open sans',sans-serif;
+}
+
+.contact_social .social_block h2 {
+	margin-bottom: 11px;
+}
+
+.contact_social p {
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.contact_social li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.contact_social li.email {
+	margin-right: 0;
+}
+
+.contact_social li.facebook a,
+.contact_social li.twitter a,
+.contact_social li.email a {
+	display: block;
+	opacity: 0.8;
+	text-indent: -9999px;
+	height: 17px;
+}
+
+.contact_social li.facebook a:hover,
+.contact_social li.twitter a:hover,
+.contact_social li.email a:hover {
+	opacity: 1;
+}
+
+.contact_social li.facebook a {
+	background: url("images/icon-facebook.png") no-repeat scroll center 0 transparent;
+	padding: 0 5px;
+	width: 5px;
+}
+
+.contact_social li.twitter a {
+	background: url("images/icon-twitter.png") no-repeat scroll 0 0 transparent;
+	width: 20px;
+}
+
+.contact_social li.email a {
+	background: url("images/icon-email.png") no-repeat scroll 0 0 transparent;
+	width: 26px;
+}
+
+#contact .train {
+	background: url("images/dinnerties-train-right.png") no-repeat scroll right 0 transparent;
+	height: 43px;
+	margin: 100px 0;
+}
+
+/* Footer */
+
+#footer {
+	border-top: none;  
+}
+
+/* Form - Contact 7 */
+
+.input_name {
+	width: 80.5%;
+	margin-left: 2%;
+}
+
+.input_mail {
+	width: 76%;
+	margin-left: 2%;
+}
+
+.input_age {
+	width: 88%;
+	margin-left: 2%;
+}
+
+.input_textarea {
+	width: 93%;
+	height: 60px;
+	margin-left: 2%;
+}
+
+span.wpcf7-list-item {
+	float: left;
+	width: 32%;
+}
+
+span.wpcf7-list-item:last-child {
+	width: 16%;
+}
+
+.input_submit{
+	margin-left: 35%;
+	position: absolute;
+	top: 7em;
+}
+
+.input_submit_attend {
+	margin-left: 40%;
+	position: absolute;
+	top: 7em;
+}
+
+body #wrapper #content .button,
+body #wrapper #content .button:visited,
+body #wrapper #content .reply a,
+body #wrapper #content #respond .form-submit input#submit,
+input[type="submit"] {
+	background: -moz-linear-gradient(center top , #B82132 0%, #B82132 100%) repeat scroll 0 0 transparent;
+}
+
+/* DESKTOP STYLES
+-----------------
+Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
+
+@media only screen and (min-width: 1100px) {
+	
+	.parallax {
+		background-attachment: fixed !important;
+	}
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 730px) {
+	
+	/* About */
+	
+	#about_us .train {
+		background: url("images/dinnerties-train-600.png") no-repeat scroll -459px 0 transparent;
+		height: 35px;
+	}
+	
+	/* FaQs */
+	
+	#faqs .train {
+		background: url("images/dinnerties-train-600.png") no-repeat scroll center 0 transparent;
+		height: 35px;
+	}
+	
+	/* Contact */
+	
+	#contact .train {
+		background: url("images/dinnerties-train-right-600.png") no-repeat scroll right 0 transparent;
+		height: 35px;
+	}
+
+	.see_you .sides {
+		width: 137px;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+
+	/* Anchor Routes */
+
+	#attend_btn_div span,
+	#host_btn_div span {
+		width: 390px;
+	}
+	
+	#attend_btn_div span {
+		background-image: url("images/text-iwanttoattend-480.png");
+	}
+	
+	#host_btn_div span {
+		background-image: url('images/text-iwanttohost-480.png');
+	}
+
+	/* Navigation */
+	
+	.to_dinner span.text {
+		font-size: 24px;
+		margin: 0 7px 0 10px;
+	}
+	
+	.to_dinner .sides {
+		margin-bottom: 2px;
+		width: 40px;
+	}
+	
+	/* Form */
+	
+	.form-container {
+		margin: 25px auto -40px;
+		max-width: 390px;
+	}
+	
+	#attend_header_block .sides, #host_header_block .sides {
+		width: 390px;
+	}
+	
+	.tag_line_form {
+		font-size: 15px;
+	}
+	
+	#attend_title h1, #host_title h1 {
+		margin: 20px auto;
+	}
+	
+	#attend_title h1 {
+		background-image: url("images/text-iwanttoattend-form-480.png");
+		height: 20px;
+		width: 352px;
+	}
+	
+	#host_title h1 {
+		background-image: url("images/text-iwanttohost-form-480.png");
+		height: 19px;
+		width: 304px;
+	}
+	
+	/* About */
+	
+	.about_icon .sides {
+		width: 153px;
+	}
+	
+	.about_text h2 {
+		line-height: 24px;
+		margin: 25px auto 20px;
+		width: 390px;
+	}
+	
+	.about_text div {
+		width: 438px;
+	}
+	
+	#about_us .train {
+		background: url("images/dinnerties-train-480.png") no-repeat scroll -348px 0 transparent;
+		height: 27px;
+		margin: 75px 0;
+	}
+	
+	/* FaQs */
+	
+	.faq_icon .sides {
+		width: 153px;
+	}
+	
+	.faq_text h2 {
+		line-height: 24px;
+		margin: 25px auto 20px;
+		width: 450px;
+	}
+	
+	ul.nav1 {
+		width: 438px;
+	}
+	
+	#faqs .train {
+		background: url("images/dinnerties-train-480.png") no-repeat scroll center 0 transparent;
+		height: 27px;
+		margin: 75px 0;
+	}
+	
+	/* Contact */
+	
+	.contact_icon .sides {
+		width: 153px;
+	}
+	
+	.contact_block {
+		margin: 0 auto;
+		width: 438px;
+	}
+	
+	#contact .train {
+		background: url("images/dinnerties-train-right-480.png") no-repeat scroll right 0 transparent;
+		height: 27px;
+		margin: 75px 0;
+	}
+	
+	.see_you .sides {
+		margin-bottom: 4px;
+		width: 83px;
+	}
+	
+	.see_you p {
+		font: 30px/1 bebas-neue,sans-serif;
+		margin: 0 6px 0 10px;
+	}
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+	/* Main */
+	
+	div, p, a, li, td {
+		-webkit-text-size-adjust:none;
+	}
+	
+	html {
+		min-width: 320px;
+	}
+	
+	#nav.is-sticky {
+		min-width: 320px;
+		margin: 0 auto;
+	}
+	
+	/* Anchor Routes */
+
+	#attend_btn_div span, #host_btn_div span {
+		padding: 10px 16px;
+		width: 266px;
+	}
+	
+	#attend_btn_div span {
+		background-image: url("images/text-iwanttoattend-320.png");
+	}
+
+	#host_btn_div span {
+		background-image: url('images/text-iwanttohost-320.png');
+	}
+	
+	.bizz_content {
+		padding-top: 45px;
+	}
+	
+	.parallax {
+		height: 250px;
+	}
+
+	/* Navigation */
+	
+	.to_dinner span.text {
+		font-size: 16px;
+		margin: 0 1px 0 5px;
+	}
+	
+	.to_dinner .sides {
+		margin-bottom: -1px;
+		width: 11px;
+	}
+	
+	/* Navigation */
+	
+	.menu_nav li a {
+		padding: 0 5px;
+	}
+	
+	/* Form */
+	
+	.form-container {
+		margin: 25px auto -50px;
+		max-width: 300px;
+	}
+	
+	#attend_header_block .sides, #host_header_block .sides {
+		width: 300px;
+	}
+	
+	.tag_line_form {
+		font-size: 13px;
+		line-height: 18px;
+		margin: 0 auto;
+		width: 250px;
+	}
+	
+	#attend_title h1, #host_title h1 {
+		margin: 20px auto;
+	}
+	
+	#attend_title h1 {
+		background-image: url("images/text-iwanttoattend-form-320.png");
+		height: 16px;
+		width: 296px;
+	}
+	
+	#host_title h1 {
+		background-image: url("images/text-iwanttohost-form-320.png");
+		height: 17px;
+		width: 256px;
+	}
+	
+	/* About */
+	
+	.about_icon .sides {
+		width: 83px;
+	}
+	
+	.about_text {
+		margin: 0 auto;
+		width: 300px;
+	}
+	
+	.about_text h2 {
+		font-size: 16px;
+		margin: 25px 0 20px;
+	}
+	
+	.about_text div {
+		width: auto;
+	}
+	
+	.about_text div p {
+		font-size: 12px;
+		line-height: 1.25;
+	}
+	
+	#about_us .train {
+		background: url("images/dinnerties-train-320.png") no-repeat scroll -245px 0 transparent;
+		height: 19px;
+		margin: 50px 0;
+	}
+	
+	/* FaQs */
+	
+	.faq_icon .sides {
+		width: 83px;
+	}
+	
+	.faq_text h2 {
+		width: 300px;
+		font-size: 16px;
+		margin: 25px auto 20px;
+	}
+	
+	.faq_text .faq_content {
+		margin: 0 auto;
+		width: 300px;
+	}
+	
+	ul.nav1 {
+		width: auto;
+	}
+	
+	.nav1 li {
+		margin-bottom: 15px;
+	}
+	
+	.nav1 li div {
+		font-size: 13px;
+	}
+	
+	.nav1 p {
+		font-size: 12px;
+		line-height: 1.25;
+	}
+	
+	#faqs .train {
+		background: url("images/dinnerties-train-320.png") no-repeat scroll center 0 transparent;
+		height: 19px;
+		margin: 50px 0;
+	}
+	
+	/* Contact */
+	
+	.contact_icon .sides {
+		width: 83px;
+	}
+	
+	.contact_block {
+		margin: 0 auto;
+		width: 300px;
+	}
+	
+	.contact_text h2 {
+		font-size: 16px;
+	}
+	
+	.contact_social {
+		width: auto;
+	}
+	
+	.contact_social h2 {
+		font-size: 12px !important;
+	}
+	
+	.contact_social p {
+		font-size: 12px;
+		line-height: 1.25;
+	}
+	
+	.contact_social .mail_block p {
+		margin-top: 8px;
+	}
+	
+	#contact .train {
+		background: url("images/dinnerties-train-right-320.png") no-repeat scroll right 0 transparent;
+		height: 19px;
+		margin: 50px 0;
+	}
+	
+	.see_you .sides {
+		margin-bottom: 2px;
+		width: 35px;
+	}
+	
+	.see_you p {
+		font: 24px/1 bebas-neue,sans-serif;
+		margin: 0 2px 0 6px;
+	}
+}

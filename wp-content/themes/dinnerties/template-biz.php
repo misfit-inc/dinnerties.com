@@ -45,7 +45,7 @@ $page_template = woo_get_page_template();
 						<div class="parallax" style="background-image: url('<?php the_field('text_header_image', 'options') ?>');">
 							<div class="bizz_content">
 								<div class="cover_one" id="attend_btn_div">
-									<a href="#attend_tag"><span class="attnd"><?php the_field('Text_ATTEND', 'options'); ?></span></a>
+									<a><span class="attnd"><?php the_field('Text_ATTEND', 'options'); ?></span></a>
 								</div>
 								
 								<div class="or">
@@ -53,9 +53,18 @@ $page_template = woo_get_page_template();
 								</div>
 								
 								<div class="cover_two" id="host_btn_div">
-									<a href="#host_tag"><span class="attnd"><?php the_field('Text_HOST', 'options'); ?></span></a>
+									<a><span class="attnd"><?php the_field('Text_HOST', 'options'); ?></span></a>
 								</div>
 							</div>
+							<div class="overlay-text">
+								<div class="overlay-layer"></div>
+								<div class="overlay-content">
+									<div>
+										<p>Sorry friend, DinnerTies is currently postponed.</p>
+										<p>Please check back later for more dinners with friends.</p>
+									</div>
+								</div>
+							</div>	
 						</div>
 					</div>
 					
@@ -85,7 +94,7 @@ $page_template = woo_get_page_template();
 
 					<!-- I Want To Attend -->
 					
-					<div id="attend_tag">
+					<!-- <div id="attend_tag">
 						<div id="attend_header_block">
 							<div class="sides"></div>
 							<div id="attend_title"><h1><?php the_field('attend_title', 'options'); ?></h1></div>
@@ -97,15 +106,15 @@ $page_template = woo_get_page_template();
 						<div class="form-container">
 							<?php the_field('attend_podio_form', 'options'); ?>
 						</div>
-					</div>
+					</div> -->
 					
 					<!-- End I Want To Attend -->
 					
 					<!-- I Want To Host -->
 					
-					<div class="parallax" style="background-image: url('<?php the_field('host_header_image', 'options') ?>');"></div>
+					<!-- <div class="parallax" style="background-image: url('<?php the_field('host_header_image', 'options') ?>');"></div> -->
 					
-					<div id="host_tag">
+					<!-- <div id="host_tag">
 					
 						<div id="host_header_block">
 							<div class="sides"></div>
@@ -118,14 +127,14 @@ $page_template = woo_get_page_template();
 						<div class="form-container">
 							<?php the_field('host_podio_form', 'options'); ?>
 						</div>
-					</div>
+					</div> -->
 					
 					<!-- End I Want To Host -->
 
 
 					<!-- About Us -->
 					
-					<div class="parallax" style="background-image: url('<?php the_field('about_header_image', 'options') ?>');"></div>
+					<!-- <div class="parallax" style="background-image: url('<?php the_field('about_header_image', 'options') ?>');"></div> -->
 					
 					<div id="about_us">
 					

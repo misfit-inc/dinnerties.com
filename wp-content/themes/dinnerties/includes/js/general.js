@@ -3,6 +3,23 @@
 /*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function(){
 
+	jQuery('#attend_btn_div a, #host_btn_div a').hover(
+		function() {
+			jQuery('.overlay-layer').addClass('overlay-text-hover');
+			jQuery('.overlay-content').addClass('overlay-text-reveal');
+			jQuery('.cover_one, .or, .cover_two').addClass('overlay-hide');
+		},
+		function() {
+			jQuery('.overlay-layer').removeClass('overlay-text-hover');
+			jQuery('.overlay-content').removeClass('overlay-text-reveal');
+			jQuery('.cover_one, .or, .cover_two').removeClass('overlay-hide');
+		}
+	);
+
+	jQuery('#attend_btn_div a, #host_btn_div a').click(function(e) {
+		e.preventDefault();
+	})
+
 	// FitVids - Responsive Videos
 	jQuery( '.widget_video, .panel, .video' ).fitVids();
 	if ( window.innerWidth < 768 ) {

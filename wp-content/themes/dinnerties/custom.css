@@ -89,9 +89,11 @@ a {
 }
 
 .bizz_content {
+	position: relative;
 	padding-top: 157px;
 	text-align: center;
 	width: 100%;
+	z-index: 3;
 }
 
 #attend_btn_div span,
@@ -102,7 +104,7 @@ a {
 	border: 1px solid #BCBEC0;
 	border-radius: 2px 2px 2px 2px;
 	color: #FFFFFF;
-	cursor: pointer;
+	/*cursor: pointer;*/
 	display: inline-block;
 	height: 28px;
 	padding: 16px 25px;
@@ -112,8 +114,81 @@ a {
 
 #attend_btn_div span:hover,
 #host_btn_div span:hover {
-	background-color: rgba(0, 0, 0, 0.6);
-	border: 1px solid #BCBEC0;
+/*	background-color: rgba(0, 0, 0, 0.6);
+	border: 1px solid #BCBEC0;*/
+}
+
+.cover_one, 
+.or,
+.cover_two {
+	-webkit-transition: opacity .4s ease;
+	-moz-transition: opacity .4s ease;
+	-o-transition: opacity .4s ease;
+	transition: opacity .4s ease;
+}
+
+.overlay-text {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.overlay-layer {
+	background: #a18669;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+
+	-webkit-transition: opacity .4s ease;
+	-moz-transition: opacity .4s ease;
+	-o-transition: opacity .4s ease;
+	transition: opacity .4s ease;
+}
+
+.overlay-content {
+	position: absolute;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.overlay-content {
+	opacity: 0;
+
+	-webkit-transition: opacity .4s ease;
+	-moz-transition: opacity .4s ease;
+	-o-transition: opacity .4s ease;
+	transition: opacity .4s ease;
+}
+
+.overlay-content div {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.overlay-content div p {
+	font-family: 'open sans',sans-serif;
+	text-transform: uppercase;
+	line-height: 32px;
+	padding: 0 25px;
+	font-size: 26px;
+	color: #fff;
+}
+
+.overlay-text-reveal {
+	opacity: 1;
+}
+
+.overlay-text-hover {
+	opacity: 0.6;
+}
+
+.overlay-hide {
+	opacity: 0;
 }
 
 #attend_btn_div span {
@@ -132,7 +207,7 @@ a {
 /* Navigation */
 
 .main_nav_container {
-	height: 58px;
+	/*height: 58px;*/
 }
 
 .to_dinner span.text {
@@ -759,11 +834,17 @@ Add styles inside the media query below that you only want to be applied to the 
 	}
 	
 	.bizz_content {
+		position: relative;
 		padding-top: 45px;
 	}
 	
 	.parallax {
 		height: 250px;
+	}
+
+	.overlay-content div p {
+		line-height: 20px;
+		font-size: 18px;
 	}
 
 	/* Navigation */
